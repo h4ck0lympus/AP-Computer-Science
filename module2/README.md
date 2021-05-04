@@ -24,4 +24,4 @@ there are 3 possible valid input cases:
 - car is for sale and owner is not know so 2 args are passed and owner by default set to null 
 - no arg passed and string args set to null bool args set to false 
  
- Normally we can only have 1 constructor in a class but for above cases we will have to had all 3 constructors and when 
+Normally we can only have 1 constructor in a class but for above cases we will have to had all 3 constructors and when we do so we call it overiding a constructor in object. 
