@@ -1,4 +1,6 @@
-# module2 
+# Module2 
+
+## Part 1 - Constructors and objects
 
 Java is OOP lang. So it revolves around classes and objects.
 
@@ -12,7 +14,7 @@ Java is OOP lang. So it revolves around classes and objects.
 
 ### Constructor
 
-Constructor is a piece of code that deals with argumets that are passed to a new instance when an object is initialized using `new` keyword. It helps in initializing instance variables.
+Constructor is a piece of code that deals with argumets that are passed to a new instance when an instance is initialized using `new` keyword. It helps in initializing instance variables.
 
 3 arguments have to be passed: 
 - owner name (string)
@@ -25,3 +27,47 @@ there are 3 possible valid input cases:
 - no arg passed and string args set to null bool args set to false 
  
 Normally we can only have 1 constructor in a class but for above cases we will have to had all 3 constructors and when we do so we call it overiding a constructor in object. 
+
+
+### Instantation(using new keyword) 
+
+Ok so you have created an object and now you have to make a new instance of that object. How Can we do that ? 
+So for this purpose we use `new` keyword. 
+
+**syntax:** `<Datatype> <instance name> = new <constructor>`
+
+Now we know that classes are used to define new datatype, so datatype is nothing else than the name of the class. Instance name can be anything. 
+
+## Part 2 - String Objects
+
+We have 2 methods to initialize a string object: 
+
+1. Using String literals
+2. Using new keyword / instantinating
+
+### Method-1
+
+Method 1 is simple and we have used it in previous lecs, using `"` 
+
+`String newString = "This is a string" ;`
+
+### Method 2 
+
+Method 2 is I guess more 'technical' : 
+
+`String newString = new String("This is a string made using new keyword") ; `
+
+### Method -3 
+
+This is not exactly a 'method' but a mixture of both method 1 and 2: 
+
+```java
+name = "Java"; 
+String NewName = new String(name);
+```
+
+
+
+
+
+
