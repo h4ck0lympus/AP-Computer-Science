@@ -132,7 +132,7 @@ again;
 `double` is **primitive data type**.
 `Double` is **wrapper class** 
 
-*** Basically Double and Integer are name of classes while double and int are keywords to declare variable ***
+**** Basically Double and Integer are name of classes while double and int are keywords to declare variable ****
 
 
 ![](https://user-images.githubusercontent.com/30211412/117119510-ccb18480-adaf-11eb-813d-9d2ea86e5613.png)
