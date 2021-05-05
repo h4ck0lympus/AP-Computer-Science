@@ -65,9 +65,13 @@ This is not exactly a 'method' but a mixture of both method 1 and 2:
 name = "Java"; 
 String NewName = new String(name);
 ```
+### Use of `+` and `+=` 
 
+They work in the same way as in python: 
 
+**+** used to concatinate 
+**+=** used to add string to predefined string. 
 
+### String indexing 
 
-
-
+![](https://user-images.githubusercontent.com/30211412/117084171-1ffde580-ad64-11eb-8277-8ae87b133a9d.png)
