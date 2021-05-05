@@ -72,6 +72,11 @@ They work in the same way as in python:
 **+** used to concatinate 
 **+=** used to add string to predefined string. 
 
+## String Methods 
+
+String is an inbuilt object, so a class was first made named String and we initialize everytime we make some string. There are some functions in that class i.e methods which we will discuss here
+
 ### String indexing 
 
 ![](https://user-images.githubusercontent.com/30211412/117084171-1ffde580-ad64-11eb-8277-8ae87b133a9d.png)
+
