@@ -134,6 +134,16 @@ again;
 
 **Basically Double and Integer are name of classes while double and int are keywords to declare variable**
 
+In java we should always use Integer, Double etc as java is OOP language and should only consist of objects rather then keyword. 
+One more thing, In AP course java is outdated so there are some changes we can do in our current code. For example: 
+
+```java
+Double newDoubleVar1 = new Double(19.8); 
+// and 
+Double newDoubleVar2 = 19.8; 
+```
+are one and the same thing. 
+
 
 ![](https://user-images.githubusercontent.com/30211412/117119510-ccb18480-adaf-11eb-813d-9d2ea86e5613.png)
 
