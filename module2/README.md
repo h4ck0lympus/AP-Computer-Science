@@ -110,16 +110,28 @@ It basically works in the same way as in python `subtring(Start,end)`
 #### equals method 
 Check if contents of a string is equal to contents of other string. `==` and `equals` is different, `==` compares the **memory address** while `equals` compare the **contents** . 
 
-### compareTo method 
+#### compareTo method 
 compareTo method returns different value depending upon argument given 
 
 - if string1 > string2, it returns positive number  
 - if string1 < string2, it returns negative number  
 - if string1 == string2, it returns 0
 
+## Wrapper Classes - Integer and Double
 
+### Integer
 
+`Integer` is a class notice word is capitalized
+int is **primitive data type**
+`Integer` is **wrapper class**
 
+### Double 
 
+`Double` is a class - notice word is capitalized
+again; 
+`double` is **primitive data type**.
+`Double` is **wrapper class** 
+
+![](https://user-images.githubusercontent.com/30211412/117119510-ccb18480-adaf-11eb-813d-9d2ea86e5613.png)
 
 
