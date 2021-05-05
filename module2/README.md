@@ -107,5 +107,19 @@ It basically works in the same way as in python `subtring(Start,end)`
 1st statement prints = "compu"
 2nd statement prints = "tational"
 
+#### equals method 
+Check if contents of a string is equal to contents of other string. `==` and `equals` is different, `==` compares the **memory address** while `equals` compare the **contents** . 
+
+### compareTo method 
+compareTo method returns different value depending upon argument given 
+
+- if string1 > string2, it returns positive number  
+- if string1 < string2, it returns negative number  
+- if string1 == string2, it returns 0
+
+
+
+
+
 
 
