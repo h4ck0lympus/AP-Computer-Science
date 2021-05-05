@@ -7,6 +7,9 @@ Java is OOP lang. So it revolves around classes and objects.
 - Class - blueprint/used to define new datatype 
 - Object - instance of class/ created from class
 
+![from w3 schools](https://user-images.githubusercontent.com/30211412/117099959-21dd9e00-ad90-11eb-96e3-e5eb547d25cf.png)
+
+
 ### Components of class 
 
 - attributes for properties of the object - instance variables 
@@ -78,5 +81,4 @@ String is an inbuilt object, so a class was first made named String and we initi
 
 ### String indexing 
 
-![](https://user-images.githubusercontent.com/30211412/117084171-1ffde580-ad64-11eb-8277-8ae87b133a9d.png)
 
