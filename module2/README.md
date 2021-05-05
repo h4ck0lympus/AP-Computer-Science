@@ -182,3 +182,25 @@ Math.pow(base,pow) will return base ** power
 sqrt means square root. It returns the square root of the argument passed to it. 
 
 **IMPORTANT: Always remember Math.sqrt returns a double value**
+
+#### random method 
+
+math.random returns a double b/w 0.0 and 0.99999.... (inclusive)  but not 1 . 
+
+now if we want to get a random int value we do **typecasting** 
+for example if we want int b/w 0-100 (exclusive): 
+
+```java 
+import java.lang.Math ; 
+.
+.
+.
+Integer a = Math.random()*100 ; 
+System.out.println((int)(a)) ;
+System.out.println((int)a + 1) ; // to get int b/w 0-100 (inclusive)
+```
+
+
+ 
+
+
