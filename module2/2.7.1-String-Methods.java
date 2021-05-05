@@ -14,7 +14,8 @@ import java.lang.*;
 
 public class StringMethods{
 	public static void main(String[] args){
-		String word = "computational" ; 
+		//String word = "computational" ; 
+		String word = new String("computational");
 		System.out.println(word.indexOf("n")); // prints 10 
 		System.out.println(word.indexOf("a")); 
 		System.out.println(word.indexOf("c"));

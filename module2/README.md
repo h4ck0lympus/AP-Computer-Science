@@ -147,4 +147,38 @@ are one and the same thing.
 
 ![](https://user-images.githubusercontent.com/30211412/117119510-ccb18480-adaf-11eb-813d-9d2ea86e5613.png)
 
+## Math Class
 
+Math class is a **static and predefined** class. 
+
+Static means that we dont need any instance variable (for eg `String word = new String("Hola!")` )to work with math class, we can directly call it using `math.` statement. 
+
+#### import math class 
+
+Syntax: `import java.lang.Math ; `
+
+#### abs method  
+
+```java 
+
+import java.lang.Math; 
+.
+.
+.
+
+int a = Math.abs(-8) ; 
+
+System.out.println(a) ; 
+```
+#### pow method  
+
+pow means power. it requires 2 arguments, base and power both can be int or double. 
+Math.pow(base,pow) will return base ** power
+
+**IMPORTANT: always remember Math.pow returns a double value** 
+
+#### sqrt method
+
+sqrt means square root. It returns the square root of the argument passed to it. 
+
+**IMPORTANT: Always remember Math.sqrt returns a double value**
