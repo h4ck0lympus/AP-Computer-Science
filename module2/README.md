@@ -80,5 +80,32 @@ They work in the same way as in python:
 String is an inbuilt object, so a class was first made named String and we initialize everytime we make some string. There are some functions in that class i.e methods which we will discuss here
 
 ### String indexing 
+It works the same as indexing in any other language, first char of string denoted by index 0. 
+
+![](https://user-images.githubusercontent.com/30211412/117084171-1ffde580-ad64-11eb-8277-8ae87b133a9d.png)
+
+#### indexOf method
+
+String has a inbuilt method `indexOf` which as its name says, returns the index of the given character in the string. Suppose we take a character that is repeated 
+or comes more than once in a string like `t` in `computational` **indexOf will retunrn the index of very first char.**
+
+#### substring method 
+
+Substring method slices the string just as we do in python. 
+
+```java
+String a = "computational" ; 
+
+// 1st  
+System.out.println(a.substring(0,5)) ; 
+// 2nd (overided constructor of substring method)
+System.out.println(a.substring(5)) ;
+```
+
+It basically works in the same way as in python `subtring(Start,end)` 
+
+1st statement prints = "compu"
+2nd statement prints = "tational"
+
 
 
