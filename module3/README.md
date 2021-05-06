@@ -17,15 +17,30 @@ There are many Boolean operators through which we do boolean operations:
 |        !=        	|      Not Equal to     	|
 
 
-**IMPORTANT** : Never compare strings using above keywords, we use `equals` and `compareTo` methods to compare strings
+**IMPORTANT:** Never compare strings using above keywords, we use `equals` and `compareTo` methods to compare strings
 
 ## `if` Statements
 
-```
+```java
 if (condition) { 
 
 // code if condition satisfies
 
+} 
+```
+
+## `else` statement
+
+if,`if` returns false then what to do in that case same as python3's/C's else
+
+```java
+if (condition) { 
+
+// code if condition satisfies
+
+} 
+else { 
+// more code here 
 } 
 ```
 
