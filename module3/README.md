@@ -61,7 +61,7 @@ else if (condtion) {
 else { 
       // more code here 
 } 
-
+```
 ### nested if-else
 
 As we know indentation does not matter in java so which else belong to which if, this can coz' confusion. Solution - nearest `if` of `else` is considered to overide this, we use curly brackets `{ }`
