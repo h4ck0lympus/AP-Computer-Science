@@ -1,6 +1,6 @@
 # Module 3 
 
-## Bollean Operations 
+## Boolean Operations 
 
 Boolean operations means operations which only have 2 answers either **True** or **False**. 
 
