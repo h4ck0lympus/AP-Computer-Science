@@ -43,6 +43,22 @@ else {
 // more code here 
 } 
 ```
+```java 
+if (condition) { 
+
+    // code if condition satisfies
+
+} 
+else if (condition){ 
+     // some code 
+}
+
+else if (condtion) { 
+      // some code 2
+}
+else { 
+      // more code here 
+} 
 
 
 
