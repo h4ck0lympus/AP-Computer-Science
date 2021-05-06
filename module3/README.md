@@ -15,7 +15,9 @@ There are many Boolean operators through which we do boolean operations:
 |        >=        	| More than or equal to 	|
 |        <=        	| Less than or equal to 	|
 |        !=        	|      Not Equal to     	|
-
+|        &&         |           and             |
+|        ||         |           or              |
+ 
 
 **IMPORTANT:** Never compare strings using above keywords, we use `equals` and `compareTo` methods to compare strings
 
@@ -60,5 +62,7 @@ else {
       // more code here 
 } 
 
+### nested if-else
 
+As we know indentation does not matter in java so which else belong to which if, this can coz' confusion. Solution - nearest `if` of `else` is considered to overide this, we use curly brackets `{ }`
 
