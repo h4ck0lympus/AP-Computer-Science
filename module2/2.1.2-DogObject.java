@@ -24,6 +24,7 @@ public class dog{
 	public static void main(String[] args){
 		dog gracedog = new dog("grace","lab",1);
 		gracedog.bark();
+		System.out.println(gracedog.name);
 	}
 }
 
