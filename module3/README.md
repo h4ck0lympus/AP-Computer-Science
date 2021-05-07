@@ -107,11 +107,21 @@ public class House
 		House annasHouse = new House("Green",1850,3) ; 
 		House bobsHouse ; // just initialized a null variable 
 		House momsHouse = myHouse ;
-  }
+  	}
   }
   
   ```
 Now if we compare 
 
  - `myHouse` with `annaHouse`  we get `false`
+ - `myHouse` with `momsHouse`  we get  `True` because we haven't initialized a new object so new memory space is not made. 
+ - `bobsHouse` with `null` we get `true` because though we have initialized it but haven't given attributes to it
+ 
+Comparing with `equals` method: 
+some objects have a `equals` method. This instead of comparing memory space, compares the attriutes i.e the values of the objects so if we compare: 
+
+- `myHouse` with `annasHouse` we will get `True` 
+- `myHouse` with `momsHouse` we will get `True` but ; 
+- `myHouse` with `bobsHouse` will get us `False` because it contains no value 
+
  
