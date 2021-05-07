@@ -10,6 +10,8 @@ example :
 
 - ![4.1.1 While loops introduction](./4.1.1-While-Loops.java) 
 - ![4.1.2 Never Ending while loop](./4.1.2-BEWARE-NEVER-ENDING-LOOP-ex.java)
+- ![4.1.3-While-loop-assignment1.java ](./4.1.3-While-loop-assignment1.java )
+- ![4.1.3-While-loop-assignment1.java ](./4.1.3-While-loop-assignment2.java )
 
  
  ## For loops 
