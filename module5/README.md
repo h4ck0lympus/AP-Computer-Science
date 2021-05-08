@@ -29,7 +29,7 @@ If not constructor is made java creates a default constructor by itself where al
 - double = 0.0 
 - String and other objects = null  
 
-### Typs of comments 
+### Typs of comments
 1. `//`  Single line comments 
 	- Uses :
 		* Make a single line note in between the code 
@@ -45,4 +45,13 @@ If not constructor is made java creates a default constructor by itself where al
 	- Uses
 		* They are special comments as with a java provided tool called javaDoc that comes with java JDK, all java doc comments are pulled together and are compiled into a webpage.Hence called documentation code. 
 		* There are variety of tags in comments that have specific meaning example @author @version etc. 
+
+The comments below are importand for AP FRQs. There may be some in AP. 
+#### Precondition
+It is a condition that should be true prior to execution of code example value of a variable. 
+
+#### Postcondition 
+
+Condition that must be always true after the execution of the section of code.
+
 
