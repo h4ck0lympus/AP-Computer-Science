@@ -69,5 +69,73 @@ Accessor method must be:
 - Name is often *getNameOfVariable*
 - No parameters
 
+Lets do an experiment: 
+
+```java 
+// 5.4.2-Accessor-methods.java
+
+public class Sports
+{
+	private String name ; 
+	private int numAthletes ;
+       	
+	public Sport(String n, int num)
+	{
+		name = n ; 
+		numAthletes = num ; 
+	}
+	
+	public String getName()
+	{
+		return name ; 
+	}
+	
+	public int getNumAthletes()
+	{
+		return numAthletes ; 
+	} 
+	public static void main(String[] args)
+	{
+		Sport volley = new Sport("volleyball",12) ;
+		// lets try to print the value of volley variable 
+		System.out.println(volley) ; 
+		// we get : Sports@51c8530f 
+	} 
+
+}
+```
+What is `Sports@51c8530f` ? 
+
+This comes from what we call object class and is in the form `classname@HashCode_in_hexadecimal_form` . This is not what we wanted, we wanted some info about that class. So can we fix this and use the same method to get some info. Answer is YES !! 
+
+We will make a `toString` method in our class. 
+**There are some rules that has to be followed while making `toString` method**
+- `toString` returns a string with info about instance variable 
+- It should always be `public` 
+- Return type should always be a **String**
+- No parameters
+- When `System.out.println(object)` is called , `toString` method is called 
+
+```java
+public class Sports
+{
+	private String name ; 
+	private int numAthletes ; 
+	// constructor and other methods not shown 
+	
+	public String toString()
+	{
+		return "Sport: " + name + "\nNumber of athletes: " + numAthletes ; 
+	} 
+	public static void main(String[] args)
+	{
+		Sports volley = new Sports("volleyball",12) ; 
+		System.out.println(volley) ; 
+ 	}
+
+}
+```
+
+ 
 
 
