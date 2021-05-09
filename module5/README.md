@@ -219,7 +219,7 @@ its values is changed using the name of class because its static. Its value is c
 So answer is **C**
 
 
-=======
+
 ### Local variables 
 
 They are variables which are inside a method. They cannot be public or private as they are not in a class i.e they are not global/instance variables. They cannot be called outside that method. Global/instance variable can be called or updated inside a method and can be assigned value using local variables. Ex. a constructor taking a integer variable c, this c update the value of gloable variable count. 
