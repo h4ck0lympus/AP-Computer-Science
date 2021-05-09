@@ -216,3 +216,6 @@ So as current is not static variable its value depends upon object and can chang
 
 its values is changed using the name of class because its static. Its value is changed to 145 and this remains 145 for both e1 and e2 no matter what !
 
+So answer is **C**
+
+
