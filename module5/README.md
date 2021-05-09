@@ -1,6 +1,6 @@
 # Module-5
 
-### public access modifier 
+### Public access modifier 
 
 Public access modifier "mark" the classes/methods such that they can be called and used by other classes. We always keep our constructor public so that they can be called and new instances can be made of that class
 
@@ -53,5 +53,21 @@ It is a condition that should be true prior to execution of code example value o
 #### Postcondition 
 
 Condition that must be always true after the execution of the section of code.
+
+### Accessor Methods 
+
+They are important as they allow:
+
+1. Safe access to instance variable
+2. Often refered to as get methods 
+3. Sometimes refered to as getters
+4. If there is any need of differenct class to access the instance variables, access methods are important. 
+
+Accessor method must be: 
+- Public - So that they can be called 
+- Return type must be the type of instance variable 
+- Name is often *getNameOfVariable*
+- No parameters
+
 
 
