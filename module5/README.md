@@ -199,5 +199,4 @@ Static methods/variables can be accessed directly by static methods within that 
 
 A constructor is neither static or non static so it can access both static and non static variables and methods
 
-
-
+![MCQ question](https://user-images.githubusercontent.com/30211412/117577498-9d7c7980-b107-11eb-9eb1-e7060564198b.png)
