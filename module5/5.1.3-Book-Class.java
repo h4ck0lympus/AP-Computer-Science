@@ -12,7 +12,7 @@ public class Book
 	private int number ; 
 	
 	// overloaded constructor 
-	public book(String t,String g,String a,int n)
+	public Book(String t,String g,String a,int n)
 	{
 		title = t ; 
 		genre = g ; 
@@ -21,7 +21,7 @@ public class Book
 	}
 
 	// default constructor 	
-	public book()
+	public Book()
 	{
 		title = "" ; 
 		genre = "" ; 

@@ -167,5 +167,37 @@ What does a method header looks like ?
 	- A **parameter** is information need be the method to complete its task 
 	- If the the method does not use parameters, the paranthesis are still needed by are left empty 
 
+### Static and non static methods 
+
+Static variables and methods belong to the class, they are shared between all objects 
+- If an object modifies a static variable, all objects of same class are affected 
+- A static variable can be accessed without creating instance of class 
+- A static method can be called using same way either using the class name or directly calling it
+- A static method cannot access instance variable or methods 
+
+
+Multiple choice question 
+```java
+public class Example
+{
+	private static int goal = 125;
+	private int current ; 
+
+	public Example(int c)
+	{
+		// code segment 1 
+	} 
+	
+	public static void resetGoal(int g)
+	{
+		// code segment 2 
+	}
+	// other methods not shown 
+}
+```		 
+Static methods/variables can be accessed directly by static methods within that class and cannot access non static methods/variables.
+
+A constructor is neither static or non static so it can access both static and non static variables and methods
+
 
 
