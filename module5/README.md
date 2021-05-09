@@ -216,6 +216,84 @@ So as current is not static variable its value depends upon object and can chang
 
 its values is changed using the name of class because its static. Its value is changed to 145 and this remains 145 for both e1 and e2 no matter what !
 
+<<<<<<< HEAD
 So answer is **C**
 
 
+=======
+### Local variables 
+
+They are variables which are inside a method. They cannot be public or private as they are not in a class i.e they are not global/instance variables. They cannot be called outside that method. Global/instance variable can be called or updated inside a method and can be assigned value using local variables. Ex. a constructor taking a integer variable c, this c update the value of gloable variable count. 
+
+If a local variale in declare with the same name as global variable, local variable will be given more importance i.e **global variable will not be changed**
+
+### `this` keyword 
+
+IN SHORT - `this` is a reference to the object.
+
+- Within a non-static method or a constructor, the keyword `this` is a reference to the current object - the object whose method or constructor is being called. 
+- The keyword `this` can be used to pass te current object as an actual parameter in a method call.
+
+`this` can be used in couple of ways: 
+
+- Using `this` to improve code readability 
+for example : 
+```java
+public class Dog
+{
+	private String breed ; 
+	// other instance variable not shown 
+	
+	public String getBreed()
+	{
+		return breed ; 
+	}
+
+	public boolean isSameBreed(Dog otherDog)
+	{	
+		// here in the code below it is not that clear to whom's breed we are calling by breed.equal
+		// return breed.equals(otherDog.breed) ; 
+		// Some programmers make this obvious and make their code more readable using this keyword 
+		return this.breed.equals(otherDog.breed) ; 
+
+	}
+}
+```
+
+`this` is mostly used while making a constructor. Consider this case: 
+
+```java
+public class Dog
+{
+	private String name ; 
+	private int age ; 
+	private double weight ; 
+	private double score ; 
+	
+	/*
+	public Dog(String n, int a, double w, double s)
+	{
+		// now we can simply do 
+		name = n ; 
+		// and etc. But some programmers prefer using this keyword 
+		this.age = a ; 
+		this.weight = w ; 
+		// Now we can also extend this to next level
+		// String n, int a ....  is not that meaningful we can change it to their exact names
+		
+	}
+	*/
+	public Dog(String name, int age, double weight, double score)
+	{
+		// name = name is illegal so we use this keyword
+		this.name = name ; 
+		this.age = age ; 
+		this.weight = weight ; 
+		this.score = score ; 
+	}
+
+}
+```
+
+This is how we make our code look better by using this keyword 
+>>>>>>> 605153e (Update README.md)
