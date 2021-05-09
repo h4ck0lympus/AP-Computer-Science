@@ -199,5 +199,20 @@ Static methods/variables can be accessed directly by static methods within that 
 
 A constructor is neither static or non static so it can access both static and non static variables and methods
 
-![MCQ question](https://user-images.githubusercontent.com/30211412/117577498-9d7c7980-b107-11eb-9eb1-e7060564198b.png) ![2021-05-09_20-44](https://user-images.githubusercontent.com/30211412/117577531-c43ab000-b107-11eb-9453-8e2bbd8c4941.png)
+![MCQ question](https://user-images.githubusercontent.com/30211412/117577498-9d7c7980-b107-11eb-9eb1-e7060564198b.png) 
+![Options](https://user-images.githubusercontent.com/30211412/117577531-c43ab000-b107-11eb-9453-8e2bbd8c4941.png)
+
+Lets see whats happening in the code: 
+
+1. There is a Example class 
+2. It contains 2 instance int variables - goal(static) and  current(non static)
+3. A constructor which takes only 1 argument - inc c (as it cant takes static variable)and update its value  
+4. A method to upate static variable goal 
+5. now 2 new objects are created - e1 and e2.
+6. In e1, value of current = 150 
+7. In e2, value of current = 160 
+
+So as current is not static variable its value depends upon object and can change with it but for goal 
+
+its values is changed using the name of class because its static. Its value is changed to 145 and this remains 145 for both e1 and e2 no matter what !
 
