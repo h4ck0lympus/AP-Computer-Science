@@ -135,7 +135,37 @@ public class Sports
 
 }
 ```
+we get : 
 
- 
+```
+Name:volleyball
+Number of athletes: 12
+```
+
+### Mutator Methods 
+
+- They allow to change the value of instance variable 
+- Often refered to as set methods 
+- sometimes called as setters  
+- They are neccessary if we need to change the value of instance variable 
+
+Some rules should be followed. 
+- Must be public, so that objects can access it 
+- Return type must be void because we aren't returning anything, instead we are changing some value 
+- name is often *setNameOfVariable*
+- parameter type must match the type of instance variable 
+
+### Method Header
+
+What does a method header looks like ?
+
+- Access level : set by access modifier **public** or **private**
+- Ownership: set by whether or not **static** is included 
+- Return type: date type of the value returned by the method, can be primitive, reference or void (when no value returned)
+- Identifier: the name of method 
+- Parameter list: Enclosed in paranthesis, states the data type and identifier for each parameter used in method
+	- A **parameter** is information need be the method to complete its task 
+	- If the the method does not use parameters, the paranthesis are still needed by are left empty 
+
 
 
