@@ -40,7 +40,7 @@ public class Cow
 	{
 		System.out.println(milk);
 	}
-
+	// mutator methods 
 	public void milkCow()
 	{
 		milk++;
