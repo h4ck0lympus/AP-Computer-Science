@@ -61,3 +61,16 @@ If we create an array of boolean by default  values will be `false`
 | false 	| false 	| false 	| false 	| false 	|
 |:-----:	|-------	|-------	|-------	|:-----:	|
 
+#### Initializer list 
+
+Sometimes we know the values of the array, in this case we make an initilization list:
+```java
+double [] grades = {70.5,88.2,93.7,98.7} 
+```
+This will create the following array : 
+
+| 70.5 	| 88.2 	| 93.7 	| 98.7 	|
+|:----:	|------	|------	|------	|
+
+**Notice:** we use an curly brackets and commas
+
