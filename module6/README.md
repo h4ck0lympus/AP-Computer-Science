@@ -167,3 +167,6 @@ public class DebugDuck
 - ![6.4.1-Find-Max-element-algorithm.java](./6.4.1-Find-Max-element-algorithm.java) 
 - ![6.4.1-B.Find-Min-Element-algorithm.java](./6.4.1-B.Find-Min-Element-algorithm.java)
 
+- Shifting array contents to right : 
+
+
