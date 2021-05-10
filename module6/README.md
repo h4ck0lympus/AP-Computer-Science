@@ -119,3 +119,47 @@ public class traversing
 
 ![Structure](https://user-images.githubusercontent.com/30211412/117623567-95691c00-b191-11eb-9b43-2e1ab419b125.png)
 
+Example: 
+```java 
+// from 6.3.1 
+public class EnhancedForLoop
+{
+	public static void main(String[] args)
+	{ 
+		int[] array = {1,2,3,4,5} ;  
+		for (int i : array){
+			System.out.println(i) ; 
+		}
+	}
+}
+```
+we can do this for other datatypes like `string` and `double`
+
+We can also make an array of objects and call and print the returning value of specific method like this : 
+
+```java 
+
+
+public static void main(String[] args)
+{
+    DebugDuck[] ducks = {new DebugDuck(), new DebugDuck(3)} ; 
+    for (DebugDuck current : ducks){
+        System.out.println(current.getQuesCount()) ; 
+    }
+    System.out.println("Finished !") ; 
+}
+
+public class DebugDuck
+{
+    public DebugDuck()
+    {
+        // some code ....
+    }
+    public DebugDuck(int count)
+    { // not shown ... }
+    public int getQuesCount()
+    { // ....}
+}
+```
+
+ 
