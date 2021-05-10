@@ -99,5 +99,15 @@ Remove method takes only one argument an int that refers to index. It removes el
 
 ![2021-05-10_18-24](https://user-images.githubusercontent.com/30211412/117663264-18a06700-b1be-11eb-8073-ef9c4c00bad0.png)
 
+### Set Method 
+
+Set method takes 2 argument : 
+
+int index and object 
+
+It replaces the element at position `index` with `obj`, returns the element formerly at position `index`
+
+
+
 
 

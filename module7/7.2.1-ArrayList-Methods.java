@@ -20,6 +20,9 @@ public class methods
 
         // remove first element
         arr1.remove(0) ; 
+        // replace HELLO(1 index) with Hello
+        arr1.set(1, "Hello") ; 
         
+
     }
 }
