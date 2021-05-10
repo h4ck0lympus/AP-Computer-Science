@@ -107,6 +107,7 @@ int index and object
 
 It replaces the element at position `index` with `obj`, returns the element formerly at position `index`
 
+![2021-05-10_18-24](https://user-images.githubusercontent.com/30211412/117663822-b72cc800-b1be-11eb-85fb-dc1de2c46b4c.png)
 
 
 
