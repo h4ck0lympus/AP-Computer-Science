@@ -15,8 +15,11 @@ public class methods
         // add method - Just like append of python list 
         arr1.add("Hello") ; 
         System.out.println(arr1.size()); // we will get 1 as there is an object  
+        arr1.add("HELLO") ; 
+        arr1.add(1,"hola") ; 
 
-        // 
-
+        // remove first element
+        arr1.remove(0) ; 
+        
     }
 }

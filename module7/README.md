@@ -93,6 +93,9 @@ and we get :
 ![2021-05-10_18-24](https://user-images.githubusercontent.com/30211412/117662409-26a1b800-b1bd-11eb-87b1-c0a33aed4b90.png)
 
 
+### Remove method 
+
+Remove method takes only one argument an int that refers to index. It removes element at that passed index and shifts all other elements to left. 
 
 
 
