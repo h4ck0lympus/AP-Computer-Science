@@ -91,5 +91,29 @@ This will return a string so we can directly use string methods in it like:
 So option **E** is correct. 
 
 
+#### Traversing an Array 
 
+Traversing an array means to access each element of an array.
+
+Since an array is indexed from 0 to (number of elements - 1), a standard for loop is a convinient way to accomplish traversal of an array. 
+
+```java
+import java.lang.Math ; 
+
+public class traversing
+{
+    public static void main(String[] args) {
+        int[] list1 = new int[5] ; 
+        int[] list2 = new int[5] ; 
+        
+        for (int i = 0 ; i < list1.length ; i+=1) {
+            list1[i] = (int) (Math.random() * 10) ; 
+            System.out.println("Element at index " + i + " = " + list1[i]);
+        }
+        
+    }
+}
+```
+
+#### Enhanced For-Loop for arrays 
 
