@@ -97,7 +97,7 @@ and we get :
 
 Remove method takes only one argument an int that refers to index. It removes element at that passed index and shifts all other elements to left. 
 
-
+![2021-05-10_18-24](https://user-images.githubusercontent.com/30211412/117663264-18a06700-b1be-11eb-8073-ef9c4c00bad0.png)
 
 
 
