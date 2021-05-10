@@ -74,3 +74,20 @@ This will create the following array :
 
 **Notice:** we are using curly brackets and commas
 
+MCQ Question
+
+![2021-05-09_20-44](https://user-images.githubusercontent.com/30211412/117608784-65634e00-b17c-11eb-8410-4b1876661dba.png)
+
+
+first we have to find the middle part of the odd array, which is a string. 
+Then we have to find the `indexOf` find in middle string. 
+
+So array is odd so we can do: `arrName[arrName.length() / 2]` 
+
+This will return a string so we can directly use string methods in it like:
+
+`arrName[arrName.length() / 2].indexOf(find)`
+
+So option **E** is correct. 
+
+
