@@ -89,6 +89,10 @@ It works the same as indexing in any other language, first char of string denote
 String has a inbuilt method `indexOf` which as its name says, returns the index of the given character in the string. Suppose we take a character that is repeated 
 or comes more than once in a string like `t` in `computational` **indexOf will retunrn the index of very first char.**
 
+We can also give a string as an argument, it will return the index of first charater of the string it found within the main string. 
+
+If string or character is not present in string for example "hello" is main string and "wor" is not present in it, so it will return **-1**. Same applies if we pass a character that is not in the main string. 
+
 #### substring method 
 
 Substring method slices the string just as we do in python. 
