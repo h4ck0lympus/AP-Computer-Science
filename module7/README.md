@@ -57,5 +57,43 @@ public class example
 
 ## ArrayList Methods 
 
+### Size Of ArrayList 
+
+`int size()`: returns the number of elements in the list 
+
+returns the number of objects in ArrayList 
+
+### add method 
+
+Add is just like append of python list. It adds element at the end of ArrayList, if index not specified. 
+
+**How to specify index in add ?**
+
+add takes 2 argument : 
+
+add(index , object)  
+
+So if we want to add 5 in the ArrayList below at index 2 : 
+
+| 1 	| 2 	| 3 	| 4 	|
+|:-:	|---	|---	|---	|
+| 0 	| 1 	| 2 	| 3 	|
+
+
+we do : 
+
+arrName.add(2,5) ; 
+ 
+and we get : 
+
+| 1 	| 2 	| 5 	| 3 	| 4 	|
+|:-:	|---	|---	|---	|---	|
+| 0 	| 1 	| 2 	| 3 	| 4 	|
+
+
+
+
+
+
 
 
