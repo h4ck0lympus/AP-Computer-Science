@@ -24,8 +24,39 @@ or
 import java.util.List ; 
 ```
 
+## Declare a variable to reference an `ArrayList` object
 
+ArrayList<`Datatype`> variable_name ; 
 
+<<<<<<< HEAD
 >>>>>>> 138926a (Update README.md)
+=======
+List<`DataType`> variable_name ; 
+>>>>>>> b325481 (7.1.1 added)
 
+## Instantiate an arraylist object 
+
+ArrayList<`DataType`> objectName = new Arraylist<`DataType`>() ; 
+
+List<`Datatype`> objectName      =  new List<`DataType`>(n)  ; 
+                                                         |
+                                                    No of elements
+
+
+Example: 
+
+```java
+import java.util.ArrayList ; 
+public class example 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> a1 = new ArrayList<Integer>() ; 
+        ArrayList<String> a2 = new ArrayList<String>(5) ; 
+        ArrayList<Student> a3 = new ArrayList<Student>() ; 
+    }
+}
+```
+
+## ArrayList Methods 
 
