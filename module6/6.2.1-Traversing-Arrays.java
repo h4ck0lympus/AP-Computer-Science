@@ -1,3 +1,11 @@
+/*
+ * Programmer: HackOlympus
+ * Date: 10th May 
+ * Purpose: Demonstrate traversing arrays
+ */ 
+
+
+
 import java.lang.Math ; 
 
 public class traversing
