@@ -117,3 +117,5 @@ public class traversing
 
 #### Enhanced For-Loop for arrays 
 
+![Structure](https://user-images.githubusercontent.com/30211412/117623567-95691c00-b191-11eb-9b43-2e1ab419b125.png)
+
