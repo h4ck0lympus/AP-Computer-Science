@@ -7,7 +7,6 @@ It is a prewritten class, which is based in arrays. It is a part of `collections
 - Arrays are **static** in size 
 - Arraylist are **dynamic** in size, their size can be changed at any time 
 
-<<<<<<< HEAD
 ![2021-05-10_15-05](https://user-images.githubusercontent.com/30211412/117640478-b4bc7500-b1a2-11eb-9af8-d8987e865192.png)
 =======
 ## How to use ArrayLists 
@@ -28,11 +27,9 @@ import java.util.List ;
 
 ArrayList<`Datatype`> variable_name ; 
 
-<<<<<<< HEAD
->>>>>>> 138926a (Update README.md)
-=======
+
 List<`DataType`> variable_name ; 
->>>>>>> b325481 (7.1.1 added)
+
 
 ## Instantiate an arraylist object 
 
@@ -59,4 +56,6 @@ public class example
 ```
 
 ## ArrayList Methods 
+
+
 
