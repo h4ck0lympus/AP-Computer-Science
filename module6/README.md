@@ -117,7 +117,7 @@ public class traversing
 
 #### Enhanced For-Loop for arrays 
 
-![Structure](https://user-images.githubusercontent.com/30211412/117623567-95691c00-b191-11eb-9b43-2e1ab419b125.png)
+![Structure](https://user-images.githubusercontent.com/30211412/117623567-95691c00-b191-11eb-9/b43-2e1ab419b125.png)
 
 Example: 
 ```java 
@@ -162,4 +162,8 @@ public class DebugDuck
 }
 ```
 
- 
+#### Develop algorithms using arrays 
+
+- ![6.4.1-Find-Max-element-algorithm.java](./6.4.1-Find-Max-element-algorithm.java) 
+- ![6.4.1-B.Find-Min-Element-algorithm.java](./6.4.1-B.Find-Min-Element-algorithm.java)
+
