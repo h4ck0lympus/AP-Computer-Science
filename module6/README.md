@@ -72,5 +72,5 @@ This will create the following array :
 | 70.5 	| 88.2 	| 93.7 	| 98.7 	|
 |:----:	|------	|------	|------	|
 
-**Notice:** we use an curly brackets and commas
+**Notice:** we are using curly brackets and commas
 

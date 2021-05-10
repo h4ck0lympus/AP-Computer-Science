@@ -20,6 +20,7 @@ public class arrays
 		// we get this: [I@13eb8acf and this is hash code of that array  
 		// to print value of the element at index 2 we will do : 
 		System.out.println(list1[2]);
-		// and we get 33 
+		// and we get 33  
+	
 	}
 }
