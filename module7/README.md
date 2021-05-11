@@ -217,9 +217,12 @@ So in short **ALWAYS** mention datatype after arraylist `ArrayList<Datatype>`
 
 We can traverse arraylist just like arrays, 
 
-while using enhanced-For loops, we can't modify the value of arraylist while using them. They copy the arraylist and doesn't use the exact list, therefore **use simple for loops while doing traverse operations on ArrayLists**
+1. While using enhanced-For loops, we can't modify the value of arraylist while using them. They copy the arraylist and doesn't use the exact list, therefore **use simple for loops while doing traverse operations on ArrayLists**
 
-We cannot change the size of ArrayList while using **enhanced for loop** .
+2. We cannot change the size of ArrayList while using **enhanced for loop** .
 
-Removing Element from ArrayList at wrong time. 
+3. Removing Element from ArrayList at wrong time. 
+
+![2021-05-10_18-24](https://user-images.githubusercontent.com/30211412/117763100-dcb1e400-b247-11eb-9001-5246289b0493.png)
+
 
