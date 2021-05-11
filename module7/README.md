@@ -115,5 +115,111 @@ takes 1 argument : `int index`
 
 return element at that `index` . 
 
+### ArrayList as argument to method 
 
+
+```java
+import java.util.ArrayList ; 
+
+
+public class Argument
+{
+	public static void main(String[] args)
+	{
+		ArrayList<Boolean> ques = new ArrayList<Boolean>() ; 
+		ques.add(true) ; 
+		// Here we are calling method that does not change ArrayList Datatype
+		myMethod1(ques) ; 
+	}
+	
+	public static void myMethod1(ArrayList arr)
+	{
+		if (arr.size() > 0) {
+			System.out.println(arr.get(0)) ;
+		}
+	}
+	public static void myMethod2(ArrayList arr)
+	{
+		if (arr.size() > 0){
+			arr.set(0,"Hello") ; 
+		}
+	}
+}	
+```
+**Some points to note and think about :** 
+1. we are making static because we want to use it in our static main 
+2. Notice here we have not mentioned datatype. 
+3. This will not pose problem because we are just accessing **but what if we want to change the value ?**
+
+we get : 
+
+```
+Note: 7.2.2-ArrayList-as-arg-to-methods.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+true
+Hello
+```
+
+So we got Hello but we also get a warning that it can be unsafe for the code we wrote. 
+
+Lets make another method3 :
+```java
+public static void myMethod3(ArrayList<Boolean> arr)
+	{
+		if (arr.size() > 0){
+			arr.set(0,"Hello") ; 
+		}
+	}
+```
+
+When we run this with by calling it in main, we will get an error, which is good. 
+
+### Return ArrayList from a method 
+
+below is allowed and will compile successfully 
+```java
+
+// class constructor and other methods not shown  
+public static void methodName(ArrayList arr)
+{
+    return arr ; 
+}
+```
+Below is **problematic code** and will compile but will show errors 
+
+```java 
+
+// class constructor and other methods not shown  
+public static void methodName(ArrayList arr)
+{
+    arr.add("Hello") ; 
+    return arr ; 
+}
+```
+
+**Solution :** 
+
+```java
+// class constructor and other methods not shown  
+public static ArrayList<Boolean> methodName(ArrayList<Boolean> arr)
+{
+    // this will return error 
+    // arr.add("Hello") ; 
+    arr.add(true) ; 
+    return arr ; 
+}
+
+```
+So in short **ALWAYS** mention datatype after arraylist `ArrayList<Datatype>`
+
+
+### Traversing ArrayList 
+
+We can traverse arraylist just like arrays, 
+
+while using enhanced-For loops, we can't modify the value of arraylist while using them. They copy the arraylist and doesn't use the exact list, therefore **use simple for loops while doing traverse operations on ArrayLists**
+
+We cannot change the size of ArrayList while using **enhanced for loop** .
+
+Removing Element from ArrayList at wrong time. 
 

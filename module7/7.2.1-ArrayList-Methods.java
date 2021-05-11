@@ -1,6 +1,8 @@
-
-
-
+/*
+ * Programmer: HackOlympus
+ * Date: 10th May 
+ * Purpose: Demonstrate different methods of ArrayList 
+ */ 
 
 
 import java.util.ArrayList ; 

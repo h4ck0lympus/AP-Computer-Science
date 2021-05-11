@@ -18,5 +18,6 @@ public class substring{
 		String c = a; 
 	       	c += b ; 	
 		System.out.println("a+b = "+ c); 
+		
 	}
 }
