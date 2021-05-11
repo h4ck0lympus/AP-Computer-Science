@@ -34,4 +34,9 @@ By:
 Number of rows  =  Number of Arrays 
 number of columns = Length of each array 
 
+### Length Of Arrays 
+
+Simple `.length` will return the number of arrays in arrays i.e number of rows, to get the length of column we use arr[0].length. 
+
+
 
