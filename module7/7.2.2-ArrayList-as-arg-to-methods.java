@@ -37,11 +37,13 @@ public class Argument
 	public static void myMethod3(ArrayList<Boolean> arr)
 	{
 		if (arr.size() > 0){
-			arr.set(0,"Hello") ; 
+		// 	arr.set(0,"Hello") ; 
+			arr.set(1,true) ; 
 		}
 	}
-
-
+	
+	// method to return array list
+	
 
 }	
 	
