@@ -45,4 +45,5 @@ public class Musician extends performer
 
 This makes `Musician` a subclass under performer(becomes superclass). So subclass object can use subclass as well as superclass methods but superclass objects **can't use subclass methods** . We can make subclass a superclass by making subclass inside it . But this time `extends`  will be used with previously subclass class name. The below dia. explains clearly : 
 
+![](https://user-images.githubusercontent.com/30211412/118001308-3dceda00-b364-11eb-806e-10639b85bd84.png)
 
