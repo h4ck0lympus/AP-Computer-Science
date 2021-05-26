@@ -122,3 +122,100 @@ public Musicican(String name, int age, String instrument)
 
 ![2021-05-12_20-53](https://user-images.githubusercontent.com/30211412/118034456-9fed0680-b387-11eb-8361-970856a29e47.png)
 
+```java
+
+import java.utli.ArrayList ;
+
+public class performer
+{
+    private String name ;
+    private int age ;
+    public performer(String name, int age)
+    {
+        this.name = name ;
+        this.age = age ;
+    }
+    public getName()
+    {
+        return name ;
+    }
+    public void practice()
+    {
+        System.out.println("Honing my craft!") ;
+    }
+    public void perform()
+    {
+        System.out.println("Performing for an audience!") ;
+    }
+}
+
+public class Comedian extends performer
+{
+    private ArrayList<String> jokes ;
+
+    public Comedian(String name,ing age) {...}
+    // other constructors not shown
+
+    public void writeJoke() {...}
+    //adds joke in ArrayList
+}
+```
+
+Now lets say we want a custom `perform` method for Comedian class instead of `performer` class method, in this case we can override `perform`. By writing custom version of `perform` in comedian class itself . So if we will call perform method, it will give more preference to native Comedian perform method rather than superclass performer subclass.
+
+### We can give argments to `super()` 
+
+`super()` represents the constructor of superclass, So we can give arguments to super class and it will match the argument pattern and will set the value for instance variables. We can also use `super` keyword to call the method of superclass. For example in `BalletDancer` class which is subclass of `Dance` superclass. We can call perform using `super.perform()`, Moreover we can call any superclass method anythime, **its not like a constructor where we have to call it in the first line itself**
+
+Now suppose you have performer super class uder which we have Dancer subclass. Dancer is superclass for balletdancer subclass. Each have a perform method and eath perform method calls the `super` class perform method. 
+
+
+                                                 ─────────────┐
+                                                              │
+                                                              │
+                                                              │
+┌────────────────────────────────────────────┐                │
+│                                            │                │
+│  Performer Class                           │                │
+│                                            │                │
+│  public class performer {                  │                │
+│     public void perform() {                │                │
+│        System.out.println("Performing") ;  │                │
+│     }                                      │                │
+│  }                                         │                │
+│                                            │                │
+└────────────────────┬───────────────────────┘                │
+                     │                                        │
+                     │                                        │                   ┌─────────────────────────────────────────────────┐
+┌────────────────────▼───────────────────────┐                │                   │                                                 │
+│  public class Dancer extends performer{    │                │                   │                                                 │
+│   H                                        │                │                   │                                                 │
+│   pubic void perform(){                    │                ├───────────────►   │                  Performing jete                │
+│       super.perform() ;                    │                │                   │                                                 │
+│       System.out.println("Dancing") ;      │                │                   │                  Dancing                        │
+│    }                                       │                │                   │                                                 │
+│  }                                         │                │                   │                  performing                     │
+│                                            │                │                   │                                                 │
+└────────────────────┬───────────────────────┘                │                   │                                                 │
+                     │                                        │                   │                                                 │
+                     │                                        │                   │                                                 │
+┌────────────────────▼───────────────────────┐                │                   │                                                 │
+│                                            │                │                   │                                                 │
+│                                            │                │                   └─────────────────────────────────────────────────┘
+│  public class balletDancer extends Dancer{ │                │
+│                                            │                │                       Output when balletdancer.perform() is called
+│       public void perform() {              │                │
+│                                            │                │
+│          jete() ;                          │                │
+│          super.perform() ;                 │                │
+│       }                                    │                │
+│  }                                         │                │
+│                                            │                │
+└────────────────────────────────────────────┘                │
+                                                              │
+                                               ───────────────┘ 
+
+
+Now suppose you have to print the private instance variable of super class. You cant do it without a `get` method that prints the private class variables by calling them. As private class is class restricted. So for that you will have to make a `get` method and by using  `super.get`  we can call and print those values. 
+
+
