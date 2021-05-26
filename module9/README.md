@@ -169,7 +169,7 @@ Now lets say we want a custom `perform` method for Comedian class instead of `pe
 
 Now suppose you have performer super class uder which we have Dancer subclass. Dancer is superclass for balletdancer subclass. Each have a perform method and eath perform method calls the `super` class perform method. 
 
-
+```
                                                  ─────────────┐
                                                               │
                                                               │
@@ -215,7 +215,7 @@ Now suppose you have performer super class uder which we have Dancer subclass. D
                                                               │
                                                ───────────────┘ 
 
-
+```
 Now suppose you have to print the private instance variable of super class. You cant do it without a `get` method that prints the private class variables by calling them. As private class is class restricted. So for that you will have to make a `get` method and by using  `super.get`  we can call and print those values. 
 
 
