@@ -189,7 +189,7 @@ Now suppose you have performer super class uder which we have Dancer subclass. D
                      │                                        │                   ┌─────────────────────────────────────────────────┐
 ┌────────────────────▼───────────────────────┐                │                   │                                                 │
 │  public class Dancer extends performer{    │                │                   │                                                 │
-│   H                                        │                │                   │                                                 │
+│                                            │                │                   │                                                 │
 │   pubic void perform(){                    │                ├───────────────►   │                  Performing jete                │
 │       super.perform() ;                    │                │                   │                                                 │
 │       System.out.println("Dancing") ;      │                │                   │                  Dancing                        │
