@@ -218,4 +218,86 @@ Now suppose you have performer super class uder which we have Dancer subclass. D
 ```
 Now suppose you have to print the private instance variable of super class. You cant do it without a `get` method that prints the private class variables by calling them. As private class is class restricted. So for that you will have to make a `get` method and by using  `super.get`  we can call and print those values. 
 
+## Polmorphism 
+
+
+<h3><u>Vocabulary</u></h3>
+
+
+A reference variable is **polymorphic** when it can refer to object from different classes at different points in the code. 
+- A reference variable can store a reference to its declared class or to any subclass of its declared class . 
+
+- A method is considered polymorphic when it is overriden in at least one subclass 
+
+- Polymorphism is athe act of executing an overriden non-`static` method from correct class at runtime based on actual object type. 
+
+Lets look at this example 
+
+```
+                                                                                                                                                                                      
+                    +----------------------------------------------+                                                                                                                  
+                    |                                              |                                                                                                                  
+                    |                                              |                                                                                                                  
+                    |                                              |                                                                                                                  
+                    |       public class Entertainer               |                       +----------------------------------------------------------------------+                   
+                    |       {                                      |                       |                                                                      |                   
+                    |           private String talent ;            |                       |  ArrayList<String> oneLiners = new ArrayList<String>() ;             |                   
+                    |           public Entertainer(String t){      |                       |  // code to add jokes to oneLiners                                   |                   
+                    |               talent = t ;                   |                       |  Entertainer fred = new Entertainer("musician") ;                    |                   
+                    |           }                                  |                       |  System.out.println(fred.getTalent()) ;                              |                   
+                    |           public String getTalent(){         |                       |                                                                      |                   
+                    |               return talent ;                |                       |  System.out.println(fred.tellJoke()) ;                               |                   
+                    |           }                                  |                       |                                                                      |                   
+                    |       }                                      |                       |  Entertainer sally = new Comedian("satire",oneLiners) ;              |                   
+                    |                                              |                       |                                                                      |                   
+                    |                                              |                       |  System.out.println(sally.getTalent()) ;                             |                   
+                    |                                              |                       |  System.out.println(sally.tellJoke()) ;                              |                   
+                    +----------------------------------------------+                       |                                                                      |                   
+                                            |                                              |                                                                      |                   
+                                            |                                              |                                                                      |                   
+                                            |                                              |                                                                      |                   
+                                            |                                              |                                                                      |                   
+                                            |                                              +----------------------------------------------------------------------+                   
+                                            |                                                                                                                                         
+                                            |                                                                                                                                         
+                   +------------------------|--------------------------------------------------+                                                                                      
+                   |                                                                           |                                                                                      
+                   |                                                                           |                                                                                      
+                   |  public clas Comedian extends Entertained                                 |                                                                                      
+                   |  {                                                                        |                                                                                      
+                   |      private Arraylist<String> jokes ;                                    |                                                                                      
+                   |      public Comedian(String t, ArrayList<String> j){                      |                                                                                      
+                   |          super(t) ;  // using super we call the superclass constructor    |                                                                                      
+                   |          jokes = j ;                                                      |                                                                                      
+                   |      }                                                                    |                                                                                      
+                   |      public String getTalent(){                                           |                                                                                      
+                   |          return "Comedy style: "+ super.getTalent() ;                     |                                                                                      
+                   |      }                                                                    |                                                                                      
+                   |      public String tellJoke(){                                            |                                                                                      
+                   |          return jokes.get((int)Math.random()*jokes.size() ) ;             |                                                                                      
+                   |      }                                                                    |                                                                                      
+                   |  }                                                                        |                                                                                      
+                   |                                                                           |                                                                                      
+                   |                                                                           |                                                                                      
+                   +---------------------------------------------------------------------------+                                                                                      
+
+
+
+
+```
+
+Now we make a new variable sally, whose datatype is entertainer but it actually references the comedian object type. 
+
+Now because the object type is comedian it will execute the `getTalent` of `Comedian` class rather than Entertainer class. 
+
+But what if we ask if we do getJoke. The compiler will look at Entertainer class and because entertainer class does not have a getTalent it will not compile. But sally actually refers to a comedian and we want it to execute 
+getTalent for that we need to use `downcasting` 
+
+We will write the code like this: 
+
+```java
+System.out.println(((Comedian)sally).getTalent()) ; 
+```
+
+
 
